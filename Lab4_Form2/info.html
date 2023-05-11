@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>info</title>
+    <meta charset="UTF-8">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      .left-image {
+        width: 5px;
+        height: 30px;
+        background-color: red;
+        margin-right: 10px;
+      }
+      .title {
+        font-size: 20px;
+        font-weight: bold;
+        color: blue;
+        margin: 0;
+        flex-grow: 1;
+      }
+      .divider {
+        border-right: 1px solid #666;
+        height: 20px;
+        margin-right: 10px;
+      }
+      .button {
+        background-color: #666;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .form {
+        
+        text-align: center;
+        margin-left: 200px;
+      }
+      .line {
+        width: 500px;
+        height: 1px;
+        background-color: #666;
+        margin-left: 10px;
+        margin-right: 10px;
+        flex-grow: 1;
+    }
+    .fa {
+      font-size: 16px;
+      margin-right: 5px;
+    }   
+    </style>
+  </head>
+  <body>
+    
+    <div class="header">
+        <div class="left-image"></div>
+        <h2 class="title">Thông tin tài khoản <span style="font-weight: 100;font-size: 17px;"> <i>(bắt buộc)</i></span></h2>
+        <div class="line"></div>
+        <button class="button" onclick="toggleForm()">Rút gọn</button>
+      </div>
+    <form class="form">
+        <div class="image-preview" style="float: left;margin-left: -150px;">
+            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Ảnh của bạn" style="width: 125px; height: 125px;">
+            <br><button class="button" style="width: 125px;height: 30px;"><img src="https://banner2.cleanpng.com/20180426/pfw/kisspng-computer-icons-camera-photography-5ae221306ada91.9319799815247690724377.jpg" alt="icon" style="width: 15px; height: 15px;"/> Chọn avatar</button>
+        </div>
+      <p>Họ tên <span style="color: red;">*</span> &emsp;
+        <input type="text" style="width: 300px; height: 20px;">           
+      </p>    
+      <p>Số điện thoại <span style="color: red;">*</span> &emsp;
+        <input type="text" style="width: 300px; height: 20px; margin-right: 44px;">           
+      </p>  
+      <p>Ngày sinh <span style="color: red;">*</span> &emsp;
+        <input type="date" id="date" name="date" style="width: 300px; height: 20px; margin-right: 25px;">
+      </p>  
+      <p>Giới tính <span style="color: red;">*</span> &emsp;
+        <select  style="width: 310px; height: 28px;margin-right: 11px;">   
+          <option value="Nam">Nam</option>
+          <option value="Nữ">Nữ</option>
+          <option value="Khác">Khác</option>
+        </select>
+      </p>  
+      <p>Hôn nhân <span style="color: red;">*</span> &emsp;
+        <select  style="width: 310px; height: 28px;margin-right: 11px;"> 
+          <option value="Khác">Chọn tình trạng hôn nhân</option>  
+          <option value="Độc thân">Độc thân</option>
+          <option value="Đã kết hôn">Đã kết hôn</option>
+          <option value="Đã ly hôn">Đã ly hôn</option>
+          <option value="Đã ly thân">Đã ly thân</option>
+        </select>
+      </p>  
+      <p>Tỉnh/Thành phố <span style="color: red;">*</span> &emsp;
+        <select  style="width: 310px; height: 28px;margin-right: 55px;"> 
+          <option value="Đà Nẵng">Đà Nẵng</option>
+          <option value="Hà Nội">Hà Nội</option>
+          <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+        </select>
+      </p>  
+      <p>Chỗ ở hiện tại <span style="color: red;">*</span> &emsp;
+        <input type="text" style="width: 300px; height: 20px;margin-right: 50px;">           
+      </p> 
+      <button style="background-color: red; border: 0px;width: 100px;height: 35px;color: white;"><img src="https://e7.pngegg.com/pngimages/751/171/png-clipart-floppy-disk-computer-icons-disk-storage-diskette-angle-text.png" style="height: 12px;width: 15px;">&emsp;Lưu</button>   
+    </form>
+    
+    <script>
+      function toggleForm() {
+        var form = document.querySelector('.form');
+        if (form.style.display === 'none') {
+          form.style.display = 'block';
+        } else {
+          form.style.display = 'none';
+        }
+      }
+    </script>
+  </body>
+</html>

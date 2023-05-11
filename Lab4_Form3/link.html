@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>link</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <select id="mySelect" style="width: 100px;height: 35px;background-color: rgb(17, 114, 170);color: white;">
+        <option value="" disabled selected hidden>Link liên kết</option>
+        <option value="http://vku.udn.vn/">&nbsp;Trường ĐH CNTT&TT Việt-Hàn&emsp;</option>
+        <option value="https://www.24h.com.vn/">&nbsp;Tin tức 24h&emsp;</option>
+        <option value="https://vnexpress.net/">&nbsp;Tin tức Vietnamnet&emsp;</option>
+        <option value="https://genk.vn/">&nbsp;Tin công nghệ&emsp;</option>
+    </select>
+      
+    <script>
+        const selectElement = document.getElementById("mySelect");
+        selectElement.addEventListener("change",function(){
+            const selectedOption = this.options[this.selectedIndex];
+            const url = selectedOption.value;
+            if(url) window.location.href=url;
+        });
+    </script>
+    
+</body>
+</html>

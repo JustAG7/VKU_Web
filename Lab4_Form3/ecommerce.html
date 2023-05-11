@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tab Navigation</title>
+    <meta charset="utf-8">
+    <style>
+        .tab {
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'design')">THIẾT KẾ WEBSITE</button>
+        <button class="tablinks" onclick="openTab(event, 'content')">VIẾT NỘI DUNG WEB</button>
+        <button class="tablinks" onclick="openTab(event, 'ecommerce')">E-COMMERCE</button>
+        <button class="tablinks" onclick="highlight(event,'webapp')">LẬP TRÌNH APP WEB</button>
+        <button class="tablinks" onclick="highlight(event,'advert')">CHIẾN DỊCH QUẢNG CÁO</button>
+        <button class="tablinks" onclick="highlight(event,'domain')">HOSTING, TÊN MIỀN</button>
+        <button class="tablinks" onclick="highlight(event,'ssl')">CHỨNG CHỈ SSL</button>
+    </div>
+    <h1 style="text-align: center;font-weight: 1;">E-COMMERCE</h1>
+    <p style="text-align: center;color: gray;">
+        Gia tăng doanh số bán hàng trên kênh online cũng như xây dựng vị thế trên thị trường của bạn với những giải
+        <br> pháp thương mại điện tử (TMĐT) hàng đầu. Đó là những gì dịch vụ thiết kế website của chúng tôi mang lại.
+        <br><br><img src="https://www.themescaliber.com/wp-content/uploads/2018/05/setup-e-commerce-website.png" alt="ecommerce" style="width: 720px;">
+    </p>
+    
+
+    <script>
+        function openTab(evt, tabName) {
+            window.location.href = tabName + ".html";
+            var tablinks = document.getElementsByClassName("tablinks");
+            for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            selected(evt.currentTarget);
+            evt.currentTarget.className += " active";
+        }
+    
+        function selected(currentTab) {
+            var tablinks = document.getElementsByClassName("tablinks");
+            for (var i = 0; i < tablinks.length; i++) {
+                if (tablinks[i] == currentTab) {
+                    tablinks[i].className += " active";
+                } else {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+            }
+        }
+        function highlight(evt, tabName) {
+            var tablinks = document.getElementsByClassName("tablinks");
+            for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            evt.currentTarget.classList.add("active");
+        }
+        selected(document.getElementsByClassName("tablinks")[2]);
+    </script>
+</body>
+</html>
+

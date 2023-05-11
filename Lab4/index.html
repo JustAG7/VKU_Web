@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Interview Feedback
+        </title>
+        <meta charset="utf-8">
+        
+        <style>
+            
+            textarea {
+                
+                display: inline-block;
+                width: 350px; 
+                height: 100px;
+            
+            }
+            .remark-container {
+  
+                justify-content: space-between;
+                align-items: flex-end;
+                align-self: left;
+                overflow: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: right;">
+            <strong> Interview Feedback </strong>
+        </h1>
+        <h2>
+            This type of form may be easy way to consolidate/standarize feedback on interview candidates.
+        </h2>
+        <form>
+            <p>
+                Candidate name
+                <input type="text" name="firstname">
+                Position Applied For
+                <input type="text" name="position">
+            </p>
+            <p>
+                <span style="margin-left: 60px"> <strong>Education Level </strong></span>
+                <span style="margin-left: 50px"> <strong>Candidate is a good fit for the position </strong></span>
+            </p>
+            <p>
+                <select name="education" style="margin-left: 26px;">
+                    <option value="highschool">1/ High School</option>
+                    <option value="bachelor">2/ Bachelors Degree</option>
+                    <option value="master">3/ Masters Degree</option>
+                    <option value="phd">4/ Doctorals Degree</option>
+                    <option value="phd">5/ Professional Certification</option>
+
+                </select>
+                <input type="radio" name="fit" value="yes" style="margin-left: 10px;"> Agree <br>
+                <input type="radio" name="fit" value="yes" style="margin-left: 225px;"> Somewhat Agree <br>
+                <input type="radio" name="fit" value="yes" style="margin-left: 225px;"> Neutral <br>
+                <input type="radio" name="fit" value="yes" style="margin-left: 225px;"> Somewhat Disagree <br>
+                <input type="radio" name="fit" value="yes" style="margin-left: 225px;"> Disagree <br>
+            </p>
+            <p>
+                Should we hire this candidate?
+                <input type="radio" name="hire" value="yes"> Yes
+                <input type="radio" name="hire" value="no"> No
+            </p>
+            <p class="remark-container">
+                <label for="remark">Comments</label>
+                <textarea name="remark" rows="5" cols="40"></textarea>
+            </p>
+            
+            <button type="submit" style="height: 25px;font-size: 15px;" >SUBMIT</button>
+        </form>
+    </body>
+</html>

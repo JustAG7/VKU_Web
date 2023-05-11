@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Application Form
+        </title>
+        <meta charset="utf-8">
+        
+        <style>
+            .custom-radio {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border: 1px solid #333;
+                cursor: pointer;
+            }
+            input[type="radio"]:checked + .custom-radio {
+                background-color: black;
+            }
+            input[type="radio"][name="education"] {
+                display: none;
+            }
+            .custom-radio-square {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border: 1px solid gray;
+                border-radius: 4px; 
+                cursor: pointer;
+            }
+            input[type="radio"].custom-radio-square:checked + .custom-radio-square {
+                background-color: black;
+            }
+            textarea {
+                
+                display: inline-block;
+                width: 350px; 
+                height: 100px;
+            
+            }
+            .remark-container {
+  
+                justify-content: space-between;
+                align-items: flex-end;
+                align-self: left;
+                overflow: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            <strong> APPLICATION FORM </strong>
+        </h1>
+        <form>
+            <p>
+                First name:
+                <input type="text" name="firstname">
+            </p>
+            <p>
+                Education
+                <label>
+                    <input type="radio" name="education" value="high_school" class="custom-radio-square">
+                    <span class="custom-radio-square"></span>
+                    High School
+                </label>
+                <label>
+                    <input type="radio" name="education" value="college" class="custom-radio-square">
+                    <span class="custom-radio-square"></span>
+                    College
+                </label>
+            </p>
+            <p>
+                Gender
+                <label>
+                    <input type="radio" name="Gender" value="Male" class="custom-radio">
+                    Male
+                </label>
+                <label>
+                    <input type="radio" name="Gender" value="Female" class="custom-radio">
+                    Female
+                </label>
+            </p>
+            <p>
+                Salary
+                <input type="number" name="salary">
+            </p>
+            <p class="remark-container">
+                <label for="remark">Remark</label>
+                <textarea name="remark" rows="5" cols="40" placeholder="Type your text here..."></textarea>
+            </p>
+            <p>
+                Country
+                <select name="country">
+                    <option value="Malaysia">America</option>
+                    <option value="Singapore">England</option>
+                    <option value="Thailand">Vietnamese</option>
+                    <option value="Indonesia">China</option>
+                    <option value="Malaysia">Korea</option>
+                    <option value="Singapore">Japanese</option>
+                    <option value="Thailand">Singapore</option>
+                </select>
+            </p>
+            <button type="submit" style="height: 25px;font-size: 15px;" >SUBMIT</button>
+        </form>
+    </body>
+</html>

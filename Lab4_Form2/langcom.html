@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>experience</title>
+    <meta charset="UTF-8">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      .left-image {
+        width: 5px;
+        height: 30px;
+        background-color: red;
+        margin-right: 10px;
+      }
+      .title {
+        font-size: 20px;
+        font-weight: bold;
+        color: blue;
+        margin: 0;
+        flex-grow: 1;
+      }
+      .divider {
+        border-right: 1px solid #666;
+        height: 20px;
+        margin-right: 10px;
+      }
+      .button {
+        background-color: #666;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .form {
+        
+        text-align: center;
+        justify-content: center;
+      }
+      .line {
+        width: 500px;
+        height: 1px;
+        background-color: #666;
+        margin-left: 10px;
+        margin-right: 10px;
+        flex-grow: 1;
+    }
+    .fa {
+      font-size: 16px;
+      margin-right: 5px;
+    }   
+    p{
+
+      justify-content: center;
+      display: block;
+    }
+    input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #555;
+    border-radius: 0;
+    outline: none;
+    cursor: pointer;
+    
+}
+
+input[type="radio"]:checked {
+    background-color: #555;
+}
+    
+    </style>
+  </head>
+  <body>
+    
+    <div class="header">
+        <div class="left-image"></div>
+        <h2 class="title">Ngoại ngữ và tin học <span style="font-weight: 100;font-size: 17px;"> <i>(không bắt buộc)</i></span></h2>
+        <div class="line"></div>
+        <button class="button" onclick="toggleForm()">Rút gọn</button>
+      </div>
+      
+    <form class="form">
+        
+      <p>Ngoại ngữ &emsp;
+        <select style="width: 390px; height: 28px;margin-right: 25px;">
+          <option value="unknown">Chọn ngoại ngữ</option>
+          <option value="Tiếng Anh">Tiếng Anh</option>
+          <option value="Tiếng Pháp">Tiếng Pháp</option>
+          <option value="Tiếng Trung">Tiếng Trung</option>
+          <option value="Tiếng Nhật">Tiếng Nhật</option>
+        </select>        
+      </p>    
+      <p>Trình độ &emsp;
+        <select style="width: 390px; height: 28px;margin-right: 11px;">
+          <option value="unknown">Chọn trình độ</option>
+          <option value="Tốt">Tốt</option>
+          <option value="Khá">Khá</option>
+          <option value="Trung bình">Trung bình</option>
+        </select>           
+      </p>  
+      <p>
+        <p style="font-size: 13px;margin-left: 35px;">Tốt&emsp;&emsp;&emsp;&emsp; Khá&emsp;&emsp; Trung bình&emsp;&emsp; Kém</p>
+        
+        <label for="listen" style="font-size: 13px;margin-left: -20px;">Nghe</label>&emsp;   
+        <input type="radio" name="listen">&emsp;&emsp;&emsp;
+        <input type="radio" name="listen">&emsp;&emsp;&emsp;
+        <input type="radio" name="listen">&emsp;&emsp;&emsp;
+        <input type="radio" name="listen">
+        <br>
+        <label for="speak" style="font-size: 13px;margin-left: -8px;">Nói</label>&emsp;        
+        <input type="radio" name="speak">&emsp;&emsp;&emsp;
+        <input type="radio" name="speak">&emsp;&emsp;&emsp;
+        <input type="radio" name="speak">&emsp;&emsp;&emsp;
+        <input type="radio" name="speak">
+        <br>
+        <label for="read" style="font-size: 13px;margin-left: -12px;">Đọc</label>&emsp;        
+        <input type="radio" name="read">&emsp;&emsp;&emsp;
+        <input type="radio" name="read">&emsp;&emsp;&emsp;
+        <input type="radio" name="read">&emsp;&emsp;&emsp;
+        <input type="radio" name="read">
+        <br>
+        <label for="write" style="font-size: 13px;margin-left: -10px;">Viết</label>&emsp;        
+        <input type="radio" name="write">&emsp;&emsp;&emsp;
+        <input type="radio" name="write">&emsp;&emsp;&emsp;
+        <input type="radio" name="write">&emsp;&emsp;&emsp;
+        <input type="radio" name="write">
+      </p>
+      <button style="background-color: red; border: 0px;width: 100px;height: 35px;color: white;"><img src="https://e7.pngegg.com/pngimages/751/171/png-clipart-floppy-disk-computer-icons-disk-storage-diskette-angle-text.png" style="height: 12px;width: 15px;">&emsp;Lưu</button>   
+      <button style="background-color: gray; border: 0px;width: 120px;height: 35px;color: white;"><img src="https://cdn-icons-png.flaticon.com/512/7693/7693271.png" style="height: 12px;width: 12px;">&emsp;Không lưu</button>
+      <hr>
+      <p style="font-size: 13px;margin-left: 35px;" ><span style="font-size: 17px;margin-left: -175px; margin-right: 50px;">Tin học văn phòng</span> Tốt&emsp;&emsp;&emsp;&emsp; Khá&emsp;&emsp; Trung bình&emsp;&emsp; Kém</p>       
+        <label for="listen" style="font-size: 13px;margin-left: -20px;">MS Word</label>&emsp;   
+        <input type="radio" name="listen">&emsp;&emsp;&emsp;
+        <input type="radio" name="listen">&emsp;&emsp;&emsp;
+        <input type="radio" name="listen">&emsp;&emsp;&emsp;
+        <input type="radio" name="listen">
+        <br>
+        <label for="speak" style="font-size: 13px;margin-left: -22px;">MS Excel</label>&emsp;        
+        <input type="radio" name="speak">&emsp;&emsp;&emsp;
+        <input type="radio" name="speak">&emsp;&emsp;&emsp;
+        <input type="radio" name="speak">&emsp;&emsp;&emsp;
+        <input type="radio" name="speak">
+        <br>
+        <label for="read" style="font-size: 13px;margin-left: -59px;">MS Power Point</label>&emsp;        
+        <input type="radio" name="read">&emsp;&emsp;&emsp;
+        <input type="radio" name="read">&emsp;&emsp;&emsp;
+        <input type="radio" name="read">&emsp;&emsp;&emsp;
+        <input type="radio" name="read">
+        <br>
+        <label for="write" style="font-size: 13px;margin-left: -33px;">MS Outlook</label>&emsp;        
+        <input type="radio" name="write">&emsp;&emsp;&emsp;
+        <input type="radio" name="write">&emsp;&emsp;&emsp;
+        <input type="radio" name="write">&emsp;&emsp;&emsp;
+        <input type="radio" name="write">
+      </p>
+      <p style="margin-left: -60px;">
+        Phần mềm khác&emsp;
+        <input type="text" style="width: 390px; height: 25px;"> 
+      </p>
+      <hr>
+      <br>
+      <label for="achievement" style="margin-left: -180px;vertical-align: top;">Các thành tích học tập nổi bật khác </label> &emsp;
+      <textarea id="achievement" name="description" style="width: 390px; height: 100px; margin-right: 11px;"></textarea>
+      <br> <br>
+      <button style="background-color: red; border: 0px;width: 100px;height: 35px;color: white;"><img src="https://e7.pngegg.com/pngimages/751/171/png-clipart-floppy-disk-computer-icons-disk-storage-diskette-angle-text.png" style="height: 12px;width: 15px;">&emsp;Lưu</button>   
+      <button style="background-color: gray; border: 0px;width: 120px;height: 35px;color: white;"><img src="https://cdn-icons-png.flaticon.com/512/7693/7693271.png" style="height: 12px;width: 12px;">&emsp;Không lưu</button>
+    </form>
+    
+    <script>
+      function toggleForm() {
+        var form = document.querySelector('.form');
+        if (form.style.display === 'none') {
+          form.style.display = 'block';
+        } else {
+          form.style.display = 'none';
+        }
+      }
+    </script>
+  </body>
+</html>

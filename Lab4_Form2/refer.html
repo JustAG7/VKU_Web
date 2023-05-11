@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>refer</title>
+    <meta charset="UTF-8">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      .left-image {
+        width: 5px;
+        height: 30px;
+        background-color: red;
+        margin-right: 10px;
+      }
+      .title {
+        font-size: 20px;
+        font-weight: bold;
+        color: blue;
+        margin: 0;
+        flex-grow: 1;
+      }
+      .divider {
+        border-right: 1px solid #666;
+        height: 20px;
+        margin-right: 10px;
+      }
+      .button {
+        background-color: #666;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .form {
+        
+        text-align: center;
+        justify-content: center;
+      }
+      .line {
+        width: 500px;
+        height: 1px;
+        background-color: #666;
+        margin-left: 10px;
+        margin-right: 10px;
+        flex-grow: 1;
+    }
+    .fa {
+      font-size: 16px;
+      margin-right: 5px;
+    }   
+    </style>
+  </head>
+  <body>
+    
+    <div class="header">
+        <div class="left-image"></div>
+        <h2 class="title">Tham khảo <span style="font-weight: 100;font-size: 17px;"> <i>(không bắt buộc)</i></span></h2>
+        <div class="line"></div>
+        <button class="button" onclick="toggleForm()">Rút gọn</button>
+      </div>
+    <form class="form">
+        
+      <p style="margin-left: -90px;">Người tham khảo <span style="color: red;">*</span> &emsp;
+        <input type="text" style="width: 300px; height: 20px;">           
+      </p>    
+      <p>Chức danh <span style="color: red;">*</span> &emsp;
+        <input type="text" style="width: 300px; height: 20px; margin-right: 44px;">           
+      </p>  
+      <p style="margin-left: -5px;">Tên công ty <span style="color: red;">*</span> &emsp;
+        <input type="text" style="width: 300px; height: 20px; margin-right: 44px;">           
+      </p>  
+      <p style="margin-left: 40px;">Email <span style="color: red;">*</span> &emsp;
+        <input type="text" style="width: 300px; height: 20px; margin-right: 44px;">           
+      </p>  
+      <p style="margin-left: -5px;">Số điện thoại <span style="color: red;">*</span> &emsp;
+        <input type="text" style="width: 300px; height: 20px;margin-right: 50px;">           
+      </p> 
+      <button style="background-color: red; border: 0px;width: 100px;height: 35px;color: white;"><img src="https://e7.pngegg.com/pngimages/751/171/png-clipart-floppy-disk-computer-icons-disk-storage-diskette-angle-text.png" style="height: 12px;width: 15px;">&emsp;Lưu</button>   
+      <button style="background-color: gray; border: 0px;width: 120px;height: 35px;color: white;"><img src="https://cdn-icons-png.flaticon.com/512/7693/7693271.png" style="height: 12px;width: 12px;">&emsp;Không lưu</button>
+      <br><br><br>
+      <input type="radio" style="margin-left: -30%;width: 13px;"><span style="font-size: 15px;"> Cho phép Nhà tuyển dụng tìm kiếm thông tin của bạn và chủ động liên hệ mời phỏng vấn </span>
+      <br><input type="radio" style="margin-left: -38%;width: 13px;"><span style="font-size: 15px;"> Không cho phép nhà tuyển dụng tìm kiếm. Hồ sơ này chỉ dùng để ứng tuyển </span>    
+      <br><br><br>
+      <button style="background-color: white; border: 1px solid  black;width: 120px;height: 35px;color: red;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5TvIW8k77wlqMOmMV4-lEC7Yj70Sz6m33EkH6ZzI&s" style="height: 12px;width: 12px;color: red;">&emsp;Xem trước</button>
+      <button style="background-color: red; border: 0px;width: 200px;height: 35px;color: white;"><img src="https://e7.pngegg.com/pngimages/751/171/png-clipart-floppy-disk-computer-icons-disk-storage-diskette-angle-text.png" style="height: 12px;width: 15px;">&emsp;Lưu hồ sơ</button>   
+
+    </form>
+    
+    
+    <script>
+      function toggleForm() {
+        var form = document.querySelector('.form');
+        if (form.style.display === 'none') {
+          form.style.display = 'block';
+        } else {
+          form.style.display = 'none';
+        }
+      }
+    </script>
+  </body>
+</html>
