@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 19px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .container {
+            border: 1px solid #ccc;
+            box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+            height: 75px;
+            text-indent: 20px;
+            width: 83%;
+            border-radius: 5px;
+            background-color: rgb(227, 243, 244);
+        }
+        th {
+            background-color: #f2f2f2;
+            padding: 8px;
+        }
+        td {
+            padding: 8px;
+        }
+        li{
+            font-weight: 550;
+            padding-bottom: 5px;
+        }
+        input[type="radio"] {
+            filter: grayscale(100%);
+        }
+        hr{
+            border: none;
+            height: 1px;
+            background-color: #ccc;
+        }
+        .flex-container {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .flex-container li {
+            flex-basis: 25%;
+            margin-right: 20px;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(214, 239, 241);">
+    <div class="container">
+        <p style="font-size: 25px;">
+            <strong>Phần 1.</strong>
+            Chọn câu trả lời mà bạn đã từng hành động hoặc nghĩ mình sẽ hành động
+        </p>
+    </div>
+    <div>
+        <ol>
+            <li>Khi bạn đi đến một nơi nào đó trong ngày, bạn sẽ</li>
+            <input type="radio" name="quiz1"> lên danh sách các công việc thực hiện và thời gian thực hiện các công việc khi bạn đến đó
+            <br><input type="radio" name="quiz1"> Nghĩ đến công việc sẽ làm rồi đi thôi
+            <hr>
+            <li>Nếu bạn là một giáo viên, bạn muốn dạy</li>
+            <input type="radio" name="quiz2"> các khóa học thực nghiệm (thực tế)
+            <br><input type="radio" name="quiz2"> các khóa học liên quan đến lý thuyết
+            <hr>
+            <li>Thường thì bạn có phải là một người</li>
+            <input type="radio" name="quiz3"> chủ động giao lưu/giao tiếp
+            <br><input type="radio" name="quiz2"> trầm tính và dè dặt
+        </ol>
+    </div>
+    <div class="container" style="width: 92%;">
+        <p style="font-size: 25px;">
+            <strong>Phần 2.</strong>
+            Chọn từ hoặc nhóm từ nào đúng (gần đúng) với cách nghĩ hay hành động của bạn
+        </p>
+    </div>
+    <div>
+        <ol start="27" class="flex-container">
+            <div style="padding-right: 80px;">
+                <li></li>
+                <input type="radio" name="quiz27" style="margin-left: 
+                -20px;"> Lên kế hoạch
+                <br><input type="radio" name="quiz27" style="margin-left: 
+                -20px;"> Không Lên kế hoạch
+            </div>
+            <div style="padding-right: 135px;">
+                <li></li>
+                <input type="radio" name="quiz28" style="margin-left: 
+                -20px;"> Các sự kiện
+                <br><input type="radio" name="quiz28" style="margin-left: 
+                -20px;"> Các ý tưởng
+            </div>
+            <div style="padding-right: 150px;">
+                <li></li>
+                <input type="radio" name="quiz29" style="margin-left: 
+                -20px;"> Trầm tĩnh
+                <br><input type="radio" name="quiz29" style="margin-left: 
+                -20px;"> Nồng nhiệt
+            </div>
+            <div style="padding-right: 80px;">
+                <li></li>
+                <input type="radio" name="quiz30" style="margin-left: 
+                -20px;"> Có sức thuyết phục
+                <br><input type="radio" name="quiz30" style="margin-left: 
+                -20px;"> Làm cảm động
+            </div>
+        </ol>
+        <hr style="width: 95%;">
+        <ol start="31" class="flex-container">
+            <div style="padding-right: 130px;">
+                <li></li>
+                <input type="radio" name="quiz31" style="margin-left: 
+                -20px;"> Tưởng tượng
+                <br><input type="radio" name="quiz31" style="margin-left: 
+                -20px;"> Thực tế
+            </div>
+            <div style="padding-right: 80px;">
+                <li></li>
+                <input type="radio" name="quiz32" style="margin-left: 
+                -20px;"> Lợi ích
+                <br><input type="radio" name="quiz32" style="margin-left: 
+                -20px;"> Phước lành(Phù hộ)
+            </div>
+            <div style="padding-right: 45px;">
+                <li></li>
+                <input type="radio" name="quiz33" style="margin-left: 
+                -20px;"> Người cư xử hòa giải
+                <br><input type="radio" name="quiz33" style="margin-left: 
+                -20px;"> Người phán xét/chỉ trích
+            </div>
+            <div style="padding-right: 80px;">
+                <li></li>
+                <input type="radio" name="quiz34" style="margin-left: 
+                -20px;"> Có hệ thống 
+                <br><input type="radio" name="quiz34" style="margin-left: 
+                -20px;"> Tự ý/Linh hoạt
+            </div>
+        </ol>
+        <hr style="width: 95%;">
+        <ol start="35" class="flex-container">
+            <div style="padding-right: 145px;">
+                <li></li>
+                <input type="radio" name="quiz35" style="margin-left: 
+                -20px;"> Tuyên bố
+                <br><input type="radio" name="quiz35" style="margin-left: 
+                -20px;"> Quan niệm
+            </div>
+            <div style="padding-right: 165px;">
+                <li></li>
+                <input type="radio" name="quiz36" style="margin-left: 
+                -20px;"> Kín đáo
+                <br><input type="radio" name="quiz36" style="margin-left: 
+                -20px;"> Thích nói
+            </div>
+            <div style="padding-right: 155px;">
+                <li></li>
+                <input type="radio" name="quiz37" style="margin-left: 
+                -20px;"> Phân tích
+                <br><input type="radio" name="quiz37" style="margin-left: 
+                -20px;"> Đồng cảm
+            </div>
+            <div style="padding-right: 80px;">
+                <li></li>
+                <input type="radio" name="quiz38" style="margin-left: 
+                -20px;"> Sáng tạo cái mới
+                <br><input type="radio" name="quiz38" style="margin-left: 
+                -20px;"> làm dựa trên có sẵn
+            </div>
+        </ol>
+        <input style="margin-left: 35px;" type="radio" name="feeling"> bạn cảm thấy lạnh nhạt với nó
+        <br><input style="margin-left: 35px;" type="radio" name="feeling"> bạn rất chán nản với nó
+
+    </div>
+</body>
+</html>

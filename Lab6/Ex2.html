@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Đăng ký tài khoản diễn đàn</title>
+  <style>
+    table {
+      width: 800px;
+      border-collapse: collapse;
+    }
+    th {
+      background-color: #f2f2f2;
+      padding: 8px;
+    }
+    td {
+      padding: 8px;
+      font-weight: 550;
+      display: table-co;
+    }
+
+    input[type=text], input[type=email], input[type=tel] {
+      width: 35%;
+      padding: 6px 10px;
+      margin: 4px 0px;
+      border: 1px solid rgb(200, 193, 193);
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    input[type=submit] {
+      background-color: #266eb6;
+      margin-left: 400px;
+      display: flexbox;
+
+    }
+    input[type=fullname]{
+      width: 20%;
+      padding: 6px 10px;
+      margin: 4px 0px;
+      border: 1px solid rgb(200, 193, 193);
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    select{
+      width: 20%;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <table>
+      <tr>
+        <td style="text-align: right;">Tên đăng nhập</td>
+        <td>
+          <input type="text" name = "username" required>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: right;">Mật khẩu</td>
+        <td>
+          <input type="text" name = "password" required>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: right;">Xác nhận mật khẩu</td>
+        <td>
+          <input type="text" name = "confirmPassword" required>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: right;padding-bottom: 45px;">Địa chỉ email</td>
+        <td>
+          <input type="email" name="email" required>
+          <span style="font-weight: 100;"><br><i>Email này dùng để  nhận email kích hoạt tài khoản, lấy lại mật khẩu,<br> thông báo từ quản trị...</i></span>
+        </td>
+      </tr>
+      <tr>
+        <td  style="text-align: right;">Xưng danh</td>
+        <td>
+          <select name="agecall" required>
+            <option value="bạn">Bạn</option>
+            <option value="ông">Ông</option>
+            <option value="bà">Bà</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: right;">Họ và tên</td>
+        <td>
+          <input type="fullname" = "firstName" placeholder="Họ" required>
+          <input type="text" name = "middleName" style="width: 15%;" placeholder="Tên đệm">
+          <input type="fullname" = "lastName" placeholder="Tên" required>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: right;">Năm sinh</td>
+        <td>
+          <input type="text" name = "yearOfBirth" required>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: right;">Giới tính</td>
+        <td>
+          <input type="radio" name = "gender" required> Nam
+          <input type="radio" name = "gender" required> Nữ
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: right;">Địa chỉ liên hệ</td>
+        <td>
+          <input type="text" name = "address" style="width: 65%;" required>
+        </td>
+      </tr>
+      
+      
+      <tr>
+        <td style="text-align: right;">Tỉnh thành</td>
+        <td>
+          <select name="city">
+            <option value=""></option>
+            <option value="Đà Nẵng">Đà Nẵng</option>
+            <option value="HCM">HCM</option>
+            <option value="Hà Nội">Hà Nội</option>
+            <option value="Huế">Huế</option>
+            <option value="Hải Phòng">Hải Phòng</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: right;">Điện thoại</td>
+        <td>
+          <input type="tel" name="phone" pattern="[0-9]{10}" required>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: right;">Di động</td>
+        <td>
+          <input type="tel" name="phone" pattern="[0-9]{10}" required>
+        </td>
+      </tr>
+      
+      <tr>
+        <td colspan="2">
+          <iframe src="term.html" width="100%" height="200"></iframe>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="submit" value="Tôi đồng ý và đăng ký thành viên" style="background-color: #266eb6;">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
