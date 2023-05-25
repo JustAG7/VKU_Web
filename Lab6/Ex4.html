@@ -9,10 +9,104 @@
         body{
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 100vh;
+            background-color: rgb(249, 248, 245);
+        }
+        .flex-container {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 75px;
+            text-align: center;
+            vertical-align: bottom;
+        }
+        .flex-container ul{
+            list-style-type: none;
+        }
+        .flex-container li {
+            flex-basis: 33%;
+            margin-right: 20px;
+            padding-top: 10px;
+        }
+        .groups{
+            font-weight: 550;
+        }
+        .centered-group {
+            margin: auto;
+        }
+        textarea{
+            height: 100px;
+            margin-top: -15px;
+        }
+        p{
+            margin-top: -5px;
+        }
     </style>
-
 </head>
 <body>
-    
+    <div class="container" style="height: 50px;background-color: rgb(249, 248, 245);text-align: center;vertical-align: bottom;">
+        Current role:
+        <select name="role" id="" style="width: 150px;height: 25px;border: 3px inset;background-color: white;">
+            <option value="all">All</option>
+        </select>
+    </div>
+    <br>
+    <ul class="flex-container" style="background: linear-gradient(to top, rgba(236, 235, 230, 1) 0%, rgba(236, 235, 230, 0) 100%);
+    ">
+        <div class="groups">
+            People in the course<br>
+            Show only users of group<br>
+            <select name="group" id="" style="width: 150px;height: 25px;border: 3px inset;background-color: white;">
+                <option value="all">All participants</option>
+                <option value="class">Only class</option>
+            </select>
+        </div>
+        <div class="groups centered-group" style="padding-left: 25px;">
+            Groups<br>
+            Use only groups of<br>
+            <select name="group" id="" style="width: 150px;height: 25px;border: 3px inset;background-color: white;">
+                <option value="A">Project A</option>
+                <option value="B">Project B</option>
+            </select>
+        </div>
+        <div class="groups" style="padding-right: 20px;">
+            Members of selected group
+            
+        </div>
+    </ul>
+    <ul class="flex-container">
+        <div class="groups">
+            <p><span style="font-weight: 100;">People in this course</span></p>
+            <textarea>
+#Ángela Profesor (2)
+#Enrique Castro (1)
+#Martín Profesor (2)
+-Pilar Profesor (1)
+Rafael Guerra (3)
+Rosa Sánchez (3)
+            </textarea>
+        </div>
+        <div class="groups centered-group">
+            <p><span style="font-weight: 100;">Groups</span></p>
+            <textarea style="width: 110px;">
+WritingA01(2)
+WritingA02(3)
+WritingA03(2)
+WritingA04(2)
+            </textarea>
+        </div>
+        <div class="groups" style="padding-right: 50px;">
+            <p><span style="font-weight: 100;">Members of selected group</span></p>
+            <textarea style="width: 120px;">
+Caudia Benítez
+Inés Herrero
+            </textarea>
+        </div>
+    </ul>
+
 </body>
 </html>
